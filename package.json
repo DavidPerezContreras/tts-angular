@@ -2,7 +2,9 @@
   "name": "@tts-angular/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build:tts": "node --experimental-specifier-resolution=node ./node_modules/.bin/nx build tts-angular --configuration=production"
+  },
   "private": true,
   "dependencies": {
     "@angular/common": "~20.3.0",
@@ -12,6 +14,8 @@
     "@angular/platform-browser": "~20.3.0",
     "@angular/platform-browser-dynamic": "~20.3.0",
     "@angular/router": "~20.3.0",
+    "edge-tts-universal": "^1.3.2",
+    "kokoro-js": "^1.2.1",
     "rxjs": "~7.8.0",
     "zone.js": "~0.15.0"
   },

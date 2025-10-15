@@ -1,0 +1,8 @@
+services:
+  tts-angular:
+    build:
+      context: .
+      dockerfile: DockerFile
+    ports:
+      - "8080:80"
+

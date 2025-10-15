@@ -1,2 +1,31 @@
-<p>home works!</p>
-<button (click)="play()">Speak</button>
+<nav class="navbar">
+  <div class="nav-left">
+    <span class="logo">🗣️ VoiceApp</span>
+    <a href="#" class="nav-link">Home</a>
+    <a href="#" class="nav-link">Contact</a>
+  </div>
+  <div class="nav-right">
+    <a href="https://github.com/your-repo" target="_blank" aria-label="GitHub">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" class="icon" />
+    </a>
+  </div>
+</nav>
+
+<main class="container">
+  
+
+  <div *ngIf="!loading">
+    <h1>Text to Speech</h1>
+    <br>
+    <label for="voice">Voice:</label>
+    <select id="voice" name="voice" [(ngModel)]="selectedVoice">
+      <option *ngFor="let voice of voices" [value]="voice">{{ voice }}</option>
+    </select>
+
+    <textarea name="text" [(ngModel)]="text" rows="5" placeholder="Type something to speak..."></textarea>
+    <button (click)="play()">🔊 Speak</button>
+  </div>
+
+  <div *ngIf="loading" class="loader" aria-label="Loading Kokoro TTS model">
+  </div>
+</main>
