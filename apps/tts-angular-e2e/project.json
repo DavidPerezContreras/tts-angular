@@ -1,0 +1,9 @@
+{
+  "name": "tts-angular-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/tts-angular-e2e/src",
+  "implicitDependencies": ["tts-angular"],
+  "// targets": "to see all targets run: nx show project tts-angular-e2e --web",
+  "targets": {}
+}

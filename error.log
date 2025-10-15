@@ -1,0 +1,5 @@
+
+fatal: detected dubious ownership in repository at '/mnt/F6B2BA89B2BA4E3D/Users/Ciber/Desktop/Development/monorepo/tts-angular'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /mnt/F6B2BA89B2BA4E3D/Users/Ciber/Desktop/Development/monorepo/tts-angular
